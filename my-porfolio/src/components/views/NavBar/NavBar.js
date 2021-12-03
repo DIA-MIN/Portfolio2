@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './NavBar.scss';
+import {FaBars} from 'react-icons/fa';
 
 function NavBar() {
+  const [IsClick, setIsClick] = useState(false);
+
+  const onClickMenu = () => {
+    setIsClick(!IsClick);
+  };
+
   return (
     <nav>
       <div className="logo">MIN SEOK</div>
-      <div className="menu">
+      <div className={IsClick ? 'menu' : 'menu clamp'}>
         <ul>
           <li>Home</li>
           <li>About</li>
@@ -14,6 +21,7 @@ function NavBar() {
           <li>Contact</li>
         </ul>
       </div>
+      <FaBars className="hamberger-icon" onClick={onClickMenu} />
     </nav>
   );
 }
