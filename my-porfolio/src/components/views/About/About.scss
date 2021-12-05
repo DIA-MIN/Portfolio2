@@ -1,0 +1,162 @@
+@import '../commons/commons.scss';
+
+.about {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .myinfo {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6rem;
+    row-gap: 3rem;
+
+    li {
+      text-align: center;
+      // background: $pointColor;
+      // padding: 1rem;
+      border-radius: 10px;
+
+      div:nth-child(1) {
+        font-weight: 800;
+        font-size: 2rem;
+        color: $mainColor;
+      }
+
+      div:nth-child(2) {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: black;
+      }
+    }
+  }
+
+  .mynote {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .github,
+    .notion {
+      padding: 1rem 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      background: $pointColor;
+      cursor: pointer;
+      transition: 300ms ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .mynote-title {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 800;
+
+        .icon {
+          margin-right: 8px;
+        }
+      }
+      .mynote-subtitle {
+        margin-top: 1rem;
+      }
+    }
+
+    .github {
+      margin-right: 3rem;
+    }
+  }
+}
+
+@media screen and(max-width:768px) {
+  .about {
+    .myinfo {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2.5rem;
+
+      li {
+        div:nth-child(1) {
+          font-size: 1.5rem;
+        }
+
+        div:nth-child(2) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .mynote {
+      margin-top: 3.5rem;
+      display: flex;
+      flex-direction: column;
+
+      .github,
+      .notion {
+        margin: auto;
+        padding: 1rem 1.75rem;
+        .mynote-title {
+          font-size: 1.5rem;
+        }
+        .mynote-subtitle {
+          font-size: 14px;
+        }
+      }
+
+      .github {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:480px) {
+  .about {
+    .myinfo {
+      column-gap: 1.5rem;
+
+      li {
+        div:nth-child(1) {
+          font-size: 1.25rem;
+        }
+
+        div:nth-child(2) {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .mynote {
+      margin-top: 3.5rem;
+      display: flex;
+      flex-direction: column;
+
+      .github,
+      .notion {
+        margin: auto;
+        .mynote-title {
+          font-size: 1.25rem;
+        }
+        .mynote-subtitle {
+          font-size: 13px;
+        }
+
+        &:hover {
+          transform: scale(1);
+        }
+      }
+
+      .github {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
