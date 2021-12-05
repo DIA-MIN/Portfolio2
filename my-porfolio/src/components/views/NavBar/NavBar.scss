@@ -1,12 +1,15 @@
 @import '../commons/commons.scss';
 
 nav {
+  position: sticky;
+  top: 0;
   background: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: $bodyColor;
   padding: 0.5rem 3rem;
+  z-index: 10;
 
   .logo {
     font-weight: 800;

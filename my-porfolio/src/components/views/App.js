@@ -1,3 +1,4 @@
+import './App.scss';
 import Home from './Home/Home';
 import NavBar from './NavBar/NavBar';
 
