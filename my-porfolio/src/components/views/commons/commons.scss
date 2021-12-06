@@ -36,3 +36,15 @@ a {
   padding: 1rem;
   border-bottom: 4px solid black;
 }
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}

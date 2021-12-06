@@ -1,13 +1,13 @@
-import React from 'react';
+import React, {forwardRef} from 'react';
 import './Home.scss';
 
-function Home() {
+const Home = forwardRef((props, ref) => {
   return (
-    <div className="home">
+    <div className="home" ref={ref}>
       <div className="moto">"SLOWLY, STEADILY, BUT ALL THE WAY!"</div>
       <div className="intro">
         <div className="profile">
-          <img src="img/profileImg.jpg" />
+          <img src="img/profileImg.jpg" alt="profileImg" />
         </div>
         <div className="explain">
           안녕하세요.
@@ -19,6 +19,6 @@ function Home() {
       </div>
     </div>
   );
-}
+});
 
 export default Home;
