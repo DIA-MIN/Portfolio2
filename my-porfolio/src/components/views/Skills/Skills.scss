@@ -1,1 +1,183 @@
 @import '../commons/commons.scss';
+
+.skills {
+  @extend .container;
+  background: $bodyColor;
+
+  .skills-subtitle.first {
+    margin-top: 3.5rem;
+  }
+
+  .skills-subtitle {
+    margin-top: 2rem;
+    align-self: flex-start;
+    font-size: 2rem;
+    font-weight: 800;
+    color: $mainColor;
+  }
+  .skills-item {
+    margin-top: 1.25rem;
+    align-self: flex-start;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      background: $mainColor;
+      border-radius: 10px;
+      transition: 300ms ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .skills-icon {
+        font-size: 2rem;
+      }
+
+      .skills-icon.html {
+        color: #f75421;
+      }
+
+      .skills-icon.css {
+        color: #379ad6;
+      }
+
+      .skills-icon.js {
+        color: #f7de1f;
+      }
+
+      .skills-icon.typescript {
+        color: #2f74c0;
+      }
+
+      .skills-icon.sass {
+        color: #c56594;
+      }
+
+      .skills-icon.jquery {
+        color: #0766a8;
+      }
+
+      .skills-icon.react {
+        color: #5ed3f3;
+      }
+
+      .skills-icon.redux {
+        color: #7d42bf;
+      }
+
+      .skills-icon.spring {
+        color: #6aad3d;
+      }
+
+      .skills-icon.oracle {
+        color: #de1b1f;
+      }
+
+      .skills-icon.mysql {
+        color: #e68700;
+      }
+
+      .skills-icon.nodejs {
+        color: #689d62;
+      }
+
+      .skills-icon.mongodb {
+        color: #00e661;
+      }
+
+      .skills-icon.git {
+        color: #e84d31;
+      }
+
+      .skills-icon.github {
+        color: black;
+      }
+
+      .skills-icon.aws {
+        color: #ef931e;
+      }
+
+      .skills-icon.certificate {
+        color: #f7b217;
+      }
+
+      div {
+        margin-top: 8px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $pointColor;
+      }
+    }
+  }
+
+  .skills-item.front-end {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .skills-item.back-end {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .skills-item.vc {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and(max-width:1024px) {
+  .skills {
+    .skills-item.front-end {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}
+
+@media screen and(max-width:768px) {
+  .skills {
+    .skills-subtitle {
+      font-size: 1.75rem;
+    }
+    .skills-item {
+      li {
+        div {
+          font-size: 1.25rem;
+        }
+      }
+    }
+    .skills-item.front-end {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .skills-item.back-end {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and(max-width:480px) {
+  .skills {
+    .skills-subtitle {
+      font-size: 1.5rem;
+    }
+    .skills-item {
+      li {
+        div {
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    .skills-item.front-end {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-item.back-end {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

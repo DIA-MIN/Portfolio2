@@ -3,6 +3,7 @@ import React, {useRef} from 'react';
 import NavBar from './NavBar/NavBar';
 import Home from './Home/Home';
 import About from './About/About';
+import Skills from './Skills/Skills';
 
 function App() {
   const homeRef = useRef(null);
@@ -21,6 +22,7 @@ function App() {
       <NavBar onHomeClick={onHomeClick} onAboutClick={onAboutClick} />
       <Home ref={homeRef} />
       <About ref={aboutRef} />
+      <Skills />
     </div>
   );
 }
