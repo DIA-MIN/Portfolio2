@@ -45,7 +45,18 @@ const NavBar = () => {
           >
             <li>Skills</li>
           </Link>
-          <li>Projects</li>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            onClick={() =>
+              setTimeout(() => {
+                setIsClick(false);
+              }, 1250)
+            }
+          >
+            <li>Projects</li>
+          </Link>
           <li>Contact</li>
         </ul>
       </div>
