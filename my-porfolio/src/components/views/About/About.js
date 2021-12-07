@@ -1,8 +1,8 @@
-import React, {forwardRef} from 'react';
+import React from 'react';
 import './About.scss';
 import {SiGithub, SiNotion} from 'react-icons/si';
 
-const About = forwardRef((props, ref) => {
+const About = () => {
   const onSiteGithub = () => {
     window.open('https://github.com/DIA-MIN');
   };
@@ -14,7 +14,7 @@ const About = forwardRef((props, ref) => {
   };
 
   return (
-    <div className="about" ref={ref}>
+    <div className="about" id="about-scroll">
       <div className="title">ABOUT ME</div>
       <ul className="myinfo">
         <li>
@@ -64,6 +64,6 @@ const About = forwardRef((props, ref) => {
       </div>
     </div>
   );
-});
+};
 
 export default About;

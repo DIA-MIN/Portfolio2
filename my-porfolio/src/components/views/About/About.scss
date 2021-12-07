@@ -49,6 +49,7 @@
       background: $pointColor;
       cursor: pointer;
       transition: 300ms ease;
+      color: $mainColor;
 
       &:hover {
         transform: scale(1.1);
