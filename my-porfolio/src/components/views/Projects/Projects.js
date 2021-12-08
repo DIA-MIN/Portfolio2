@@ -11,7 +11,7 @@ function Projects() {
           2021.11.01 - 2021.11.30 (개인 프로젝트)
         </div>
         <div className="projects-item">
-          <video autoPlay muted loop>
+          <video controls autoPlay muted loop>
             <source src="/img/watched.mp4" type="video/mp4"></source>
           </video>
           <div className="proejct-explain">
@@ -76,7 +76,7 @@ function Projects() {
           2021.12.02 - 2021.12.08 (개인 프로젝트)
         </div>
         <div className="projects-item">
-          <video autoPlay muted loop>
+          <video controls autoPlay muted loop>
             <source src="/img/portfolio.mp4" type="video/mp4"></source>
           </video>
           <div className="proejct-explain">
