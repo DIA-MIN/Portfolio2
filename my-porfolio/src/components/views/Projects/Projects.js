@@ -43,7 +43,7 @@ function Projects() {
                 </li>
                 <li>
                   <div>Front-end</div>
-                  <div>React, Sass</div>
+                  <div>React, Redux, Sass</div>
                 </li>
                 <li>
                   <div>Back-end</div>
