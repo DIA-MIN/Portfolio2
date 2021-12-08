@@ -7,7 +7,7 @@ const Home = () => {
       <div className="moto">"SLOWLY, STEADILY, BUT ALL THE WAY!"</div>
       <div className="intro">
         <div className="profile">
-          <img src="img/profileImg.jpg" alt="profileImg" />
+          <img src="img/profileImg.png" alt="profileImg" />
         </div>
         <div className="explain">
           안녕하세요.
