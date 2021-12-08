@@ -11,7 +11,9 @@ function Projects() {
           2021.11.01 - 2021.11.30 (개인 프로젝트)
         </div>
         <div className="projects-item">
-          <img src="/img/watched.gif" alt="watched-intro" />
+          <video autoPlay muted loop>
+            <source src="/img/watched.mp4" type="video/mp4"></source>
+          </video>
           <div className="proejct-explain">
             다양한 <span>최신 영화들의 정보를 확인</span>하고,{' '}
             <span>나만의 영화 리스트</span>를 만들 수 있으며,{' '}
@@ -74,7 +76,9 @@ function Projects() {
           2021.12.02 - 2021.12.08 (개인 프로젝트)
         </div>
         <div className="projects-item">
-          <img src="/img/portfolio.gif" alt="portfolio-intro" />
+          <video autoPlay muted loop>
+            <source src="/img/portfolio.mp4" type="video/mp4"></source>
+          </video>
           <div className="proejct-explain">
             나는 어떤 개발자인지 소개하고 진행한 프로젝트를 지속적으로 업데이트
             하기 위한 <span>포트폴리오 웹사이트</span>입니다.
