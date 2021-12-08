@@ -57,7 +57,18 @@ const NavBar = () => {
           >
             <li>Projects</li>
           </Link>
-          <li>Contact</li>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            onClick={() =>
+              setTimeout(() => {
+                setIsClick(false);
+              }, 1250)
+            }
+          >
+            <li>Contact</li>
+          </Link>
         </ul>
       </div>
       <FaBars className="hamberger-icon" onClick={onClickMenu} />

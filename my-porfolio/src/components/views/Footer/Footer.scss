@@ -1,0 +1,36 @@
+@import '../commons/commons.scss';
+
+.footer {
+  @extend .container;
+  padding: 3rem 0;
+  background: $mainColor;
+
+  div {
+    color: $bodyColor;
+    padding: 4px 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    div {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    div {
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 3rem 1rem;
+    div {
+      font-size: 10px;
+    }
+  }
+}
