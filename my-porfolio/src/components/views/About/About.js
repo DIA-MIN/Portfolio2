@@ -9,7 +9,7 @@ const About = () => {
 
   const onSiteNotion = () => {
     window.open(
-      'https://diamin.notion.site/Front-end-Roadmap-Plan-5ee3b09105e74a94b1a78b4871bde3c8'
+      'https://diamin.notion.site/SLOWLY-STEADILY-BUT-ALL-THE-WAY-7928b9e47574446f840119c6f756afa4'
     );
   };
 
