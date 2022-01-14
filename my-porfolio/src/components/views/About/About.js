@@ -23,7 +23,7 @@ const About = () => {
         </li>
         <li>
           <div>AGES</div>
-          <div>27(1995.03.27)</div>
+          <div>28(1995.03.27)</div>
         </li>
         <li>
           <div>PHONE</div>
