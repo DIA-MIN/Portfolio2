@@ -47,10 +47,6 @@ function Skills() {
             <div>Sass</div>
           </li>
           <li>
-            <SiJquery className="skills-icon jquery" />
-            <div>jQuery</div>
-          </li>
-          <li>
             <SiReact className="skills-icon react" />
             <div>React</div>
           </li>
@@ -61,18 +57,6 @@ function Skills() {
         </ul>
         <div className="skills-subtitle">Back-end</div>
         <ul className="skills-item back-end">
-          <li>
-            <SiSpring className="skills-icon spring" />
-            <div>Spring</div>
-          </li>
-          <li>
-            <SiOracle className="skills-icon oracle" />
-            <div>oracleDB</div>
-          </li>
-          <li>
-            <GrMysql className="skills-icon mysql" />
-            <div>MySQL</div>
-          </li>
           <li>
             <SiNodedotjs className="skills-icon nodejs" />
             <div>nodeJS</div>
