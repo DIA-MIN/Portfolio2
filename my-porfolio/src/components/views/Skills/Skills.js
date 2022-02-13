@@ -5,10 +5,8 @@ import {
   SiCss3,
   SiJavascript,
   SiTypescript,
-  SiJquery,
   SiReact,
   SiRedux,
-  SiSpring,
   SiOracle,
   SiNodedotjs,
   SiMongodb,
@@ -64,6 +62,14 @@ function Skills() {
           <li>
             <SiMongodb className="skills-icon mongodb" />
             <div>mongoDB</div>
+          </li>
+          <li>
+            <SiOracle className="skills-icon oracle" />
+            <div>oracleDB</div>
+          </li>
+          <li>
+            <GrMysql className="skills-icon mysql" />
+            <div>MySQL</div>
           </li>
         </ul>
         <div className="skills-subtitle">Version Control</div>
