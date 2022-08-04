@@ -26,8 +26,6 @@ function Projects() {
             되었습니다.
             <br />
             <br />
-            {/* 백 엔드와 프론트 엔드 양쪽 모두를 개발하면서, CORS 이슈나
-            상태관리의 중요성 등을 배울 수 있었으며, */}
             <span>백 엔드</span>를 개발하면서 프론트 엔드와의 CORS 이슈나 암호화
             그리고 Authentication의 중요성을 알게되었습니다.
             <br />
@@ -62,7 +60,9 @@ function Projects() {
                 GitHub
               </button>
               <button
-                onClick={() => window.open('http://watched.devdiamin.com/')}
+                onClick={() =>
+                  window.open('https://www.watched.devdiamin.com/')
+                }
               >
                 사이트 보러 가기
               </button>
@@ -111,7 +111,69 @@ function Projects() {
               >
                 GitHub
               </button>
-              <button onClick={() => window.open('http://devdiamin.com/')}>
+              <button onClick={() => window.open('https://www.devdiamin.com/')}>
+                사이트 보러 가기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="projects-container">
+        <div className="projects-title">IWANNA</div>
+        <div className="projects-subtitle">
+          2022.07.06 - 2022.08.02 (개인 프로젝트)
+        </div>
+        <div className="projects-item">
+          <video controls autoPlay muted loop>
+            <source src="/img/iwanna.mp4" type="video/mp4"></source>
+          </video>
+          <div className="proejct-explain">
+            다양한 카테고리의<span>최신 뉴스의 정보를 확인</span>하고, 원하는
+            뉴스를<span>검색</span>할 수 있으며, 관심 뉴스는 <span>스크랩</span>
+            하여 관리할 수 있는 웹사이트 입니다.
+            <br />
+            <br />
+            수 많은 방송/통신사 중 하나를 선택하는 과정 부터 원하는 카테고리의
+            뉴스를 접하기까지의 프로세스가 너무 복잡하다 생각했습니다. 그래서
+            뉴스를 쉽게 접하고 카테고리별 원하는 뉴스를 보며, 스크랩까지 가능한
+            웹사이트가 있으면 자주 사용할 거 같아 본 프로젝트를 진행하게
+            되었습니다.
+            <br />
+            <br />
+            <span>TypeScript</span>를 프로젝트에 적용함으로써 Data Type의
+            중요성을 알게되었습니다.
+            <br />
+            <br />
+            React에서 제공 하는 <span>React.StrictMode</span>의 역할뿐 아니라
+            React에 대해서 더 공부할 수 있었던 계기가 되었습니다.
+            <br />
+            <br />
+            Open API를 활용할 때 로컬 환경에서만 데이터가 제공되는 문제를
+            해결하는 과정에서 API Document를 잘 숙지하고 활용하는 역량을
+            길렀습니다.
+            <div className="project-nav">
+              <ul>
+                <li>
+                  <div>주요 기능</div>
+                  <div>카테고리별 뉴스 확인, 뉴스 검색, 관심 뉴스 스크랩</div>
+                </li>
+                <li>
+                  <div>Front-end</div>
+                  <div>React, TypeScript, Redux, Sass</div>
+                </li>
+                <li>
+                  <div>Deployment</div>
+                  <div>GitHub</div>
+                </li>
+              </ul>
+              <button
+                onClick={() => window.open('https://github.com/DIA-MIN/IWANNA')}
+              >
+                GitHub
+              </button>
+              <button
+                onClick={() => window.open('https://dia-min.github.io/IWANNA/')}
+              >
                 사이트 보러 가기
               </button>
             </div>
