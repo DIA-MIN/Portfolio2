@@ -180,6 +180,70 @@ function Projects() {
           </div>
         </div>
       </div>
+      <div className="projects-container">
+        <div className="projects-title">COOBOOK</div>
+        <div className="projects-subtitle">
+          2022.10.14 - 2022.10.26 (개인 프로젝트)
+        </div>
+        <div className="projects-item">
+          <video controls autoPlay muted loop>
+            <source src="/img/coobook.mp4" type="video/mp4"></source>
+          </video>
+          <div className="proejct-explain">
+            <span>조리 방법</span>또는 <span>요리 종류</span>에 따라 다양한
+            레시피를 둘러볼 수 있으며, 원하는 요리의 <span>레시피를 검색</span>
+            할 수 있습니다. 관심있는 레시피는 <span>스크랩</span>하여 관리할 수
+            있는 웹사이트 입니다.
+            <br />
+            <br />
+            YouTube의 수많은 요리 채널과 웹상의 다양한 블로그가 존재하지만,
+            일일이 관련 영상을 찾아 돌려보거나 봤던 블로그를 다시 찾아야 하는
+            불편함이 존재했습니다. 그래서 다양한 요리 레시피를 둘러 보거나
+            검색을 통해 원하는 레시피는 즐겨 찾기 할 수 있는 웹사이트를 만들어
+            자취하는 지인들에게 제공하면 좋겠다고 생각하여 본 프로젝트를
+            진행하게 되었습니다.
+            <br />
+            <br />
+            <span>React</span> 라이브러리와 <span>Vue</span> 프레임워크의
+            차이점을 비교해가며, 진행한 프로젝트로 각 프론트 엔드 라이브러리
+            또는 프레임워크의 장/단점을 알 수있는 계기가 되었습니다.
+            <br />
+            <br />
+            Vue 사용자 정의 지시자를 활용하여 <span>lazy loading</span>을
+            구현하여 이미지 로딩 시 속도 및 성능을 개선했습니다.
+            <div className="project-nav">
+              <ul>
+                <li>
+                  <div>주요 기능</div>
+                  <div>다양한 레시피 확인, 레시피 검색, 관심 레시피 스크랩</div>
+                </li>
+                <li>
+                  <div>Front-end</div>
+                  <div>Vue, Vuex, Sass</div>
+                </li>
+                <li>
+                  <div>Deployment</div>
+                  <div>GitHub</div>
+                </li>
+              </ul>
+              <button
+                onClick={() =>
+                  window.open('https://github.com/DIA-MIN/COOBOOK')
+                }
+              >
+                GitHub
+              </button>
+              <button
+                onClick={() =>
+                  window.open('https://dia-min.github.io/COOBOOK/')
+                }
+              >
+                사이트 보러 가기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

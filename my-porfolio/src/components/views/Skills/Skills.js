@@ -13,6 +13,7 @@ import {
   SiGit,
   SiGithub,
   SiAmazonaws,
+  SiVuedotjs,
 } from 'react-icons/si';
 import {FaSass, FaCertificate} from 'react-icons/fa';
 import {GrMysql} from 'react-icons/gr';
@@ -51,6 +52,10 @@ function Skills() {
           <li>
             <SiRedux className="skills-icon redux" />
             <div>Redux</div>
+          </li>
+          <li>
+            <SiVuedotjs className="skills-icon vue" />
+            <div>Vue</div>
           </li>
         </ul>
         <div className="skills-subtitle">Back-end</div>
